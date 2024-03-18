@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="headerStyle.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-decoration: none;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        label {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 100%;
+        }
+
+        button[type="submit"] {
+            width: calc(100% + 12px);
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="demo.html">Home</a>
+            <a href="table.html">table</a>
+            <a href="contact.html">Imageform</a>
+        </nav>
+    </header>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div style="width: 80%; max-width: 600px;">
+            <h1>User Registration Form</h1>
+            <form id="registrationForm" action="/submit_registration" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            // Handle registration logic here
+            alert('Registration submitted successfully!');
+        });
+    </script>
+</body>
+
+</html>
+<!-- <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Feel free to contact us for any inquiries or to book a photoshoot!</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section> -->
