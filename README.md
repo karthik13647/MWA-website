@@ -1,2 +1,2 @@
-pratice the modern web development of various technologies like html, css and js to improve the fluence
+pratice the modern web development of various technologies like html, css and javascript to improve the fluence
 
